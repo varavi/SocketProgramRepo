@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'weather-report-app'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_0a256f5dafb04bf18a3aeec8d2da612d }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_9d9ed6c8dfa445158f85609eea7e5ba9 }}
           package: '*.jar'
