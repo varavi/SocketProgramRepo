@@ -1,5 +1,3 @@
-first commit for chat application
-
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
@@ -8,7 +6,7 @@ name: Build and deploy JAR app to Azure Web App - weather-report-app
 on:
   push:
     branches:
-      - Temprature-Notiification-Subscription
+      - main
   workflow_dispatch:
 
 jobs:
@@ -51,5 +49,5 @@ jobs:
         with:
           app-name: 'weather-report-app'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_6473e7475627404c992d4d49dc23dfca }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_0a256f5dafb04bf18a3aeec8d2da612d }}
           package: '*.jar'
